@@ -18,7 +18,6 @@ class CompanyController < ApplicationController
   def part3
     @company = Company.new(company_params)
     @company.save
-   UserMailer.welcome_email(@company).deliver
 
 end
 
